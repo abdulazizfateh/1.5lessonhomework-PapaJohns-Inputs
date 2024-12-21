@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="pj-icon" href="../images/site-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Johns & Log in</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <h1 class="login-title">Log in</h1>
+        <form class="form-box" action="../index.html">
+            <div class="form-logo">
+                <a href="../index.html"><img src="../images/logo.svg" alt="" width="300"></a>
+            </div>
+            <div class="form-back-to-signup">
+                <p for="backsignup">Need a PAPA JOHNS account? <a href="../pages/signup.html">Create an account</a></p>
+            </div>
+            <div class="form-email">
+                <label for="email">Email:</label>
+                <input class="email-input" type="email" id="email" name="email" placeholder="Enter your @email address"
+                    required>
+            </div>
+            <div class="form-password">
+                <label for="password">Password:</label>
+                <input class="password-input" type="password" id="password" name="password"
+                    placeholder="Enter your password" required minlength="8" maxlength="24">
+            </div>
+            <div class="form-save-login">
+                <label class="label-save-login" for="savelogin">
+                    <input type="checkbox" id="savelogin">
+                    Remember my email address
+                </label>
+            </div>
+            <div class="form-login-btns">
+                <button class="login-reset-btn" type="reset">Cancel</button>
+                <button class="login-submit-btn" type="submit">Log in</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

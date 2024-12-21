@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FS800;
+}
+
+@font-face {
+    font-family: FS400;
+    src: url(../fonts/FiraSansCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: FS500;
+    src: url(../fonts/FiraSansCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: FS700;
+    src: url(../fonts/FiraSansCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: FS800;
+    src: url(../fonts/FiraSansCondensed-ExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: FS900;
+    src: url(../fonts/FiraSansCondensed-Black.ttf);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.login-box {
+    background-image: url(../images/signup-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 80px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.signup-title {
+    width: 320px;
+    padding: 14px 0;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d5d2a;
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form-box {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.form-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.form-back-to-login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 40px;
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.form-item {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+        width: 27%;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .form-item-input {
+        border: 1px solid rgba(44, 61, 77, 0.372);
+        border-radius: 8px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 73%;
+        padding: 8px;
+        font-size: 17px;
+    }
+}
+
+
+
+.form-item-gender {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+        font-size: 20px;
+    }
+
+
+    .gender-title {
+        width: 27%;
+        text-transform: uppercase;
+    }
+
+    .gender-item-mf {
+        width: 73%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            opacity: 0.9;
+            font-family: FS700;
+        }
+    }
+}
+
+
+.form-policy {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.label-policy {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+    font-size: 16px;
+    opacity: 0.8;
+    font-family: FS400;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.form-signup-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+
+    .login-reset-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        padding: 12px;
+        border-radius: 26px;
+        transition: 0.5s ease;
+        font-size: 22px;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 2px solid transparent;
+
+        &:hover {
+            background-color: #E6E6E6;
+        }
+
+        &:active {
+            border: 2px solid #595959;
+        }
+    }
+
+    .login-submit-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 99px;
+        padding: 12px;
+        font-size: 22px;
+        border-radius: 26px;
+        background-color: #2d5d2a;
+        text-transform: uppercase;
+        color: white;
+        transition: 0.5s ease;
+
+        &:hover {
+            background-color: rgb(51, 51, 51);
+        }
+    }
+}
